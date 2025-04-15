@@ -35,5 +35,9 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@webtui/css": "^0.0.2",
+		"@webtui/theme-catppuccin": "^0.0.2"
 	}
 }

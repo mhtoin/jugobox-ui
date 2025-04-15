@@ -1,0 +1,21 @@
+@import "@webtui/css/base.css";
+@import "@webtui/css/utils/box.css";
+@import "@webtui/css/components/button.css";
+@import "@webtui/css/components/typography.css";
+@import "@webtui/theme-catppuccin";
+
+@layer base, utils, components;
+
+/* Fonts */
+@font-face {
+	font-family: "Monaspace Neon";
+	src: url("../fonts/MonaspaceNeon-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Set Monaspace Neon as the default monospace font */
+:root {
+	--font-family: "Monaspace Neon", monospace;
+}

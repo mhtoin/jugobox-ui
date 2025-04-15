@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@webtui/css':
+        specifier: ^0.0.2
+        version: 0.0.2
+      '@webtui/theme-catppuccin':
+        specifier: ^0.0.2
+        version: 0.0.2
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.5
@@ -506,6 +513,12 @@ packages:
   '@typescript-eslint/visitor-keys@8.30.0':
     resolution: {integrity: sha512-oj82UQEi0fcYmpQpVISEOUM/icPNJiRh+E6svAtwNP58QpAQnnFigEoeGADm8H7t2bolxSb7+kRYzykbBdA47w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@webtui/css@0.0.2':
+    resolution: {integrity: sha512-EssikfTC5dhZaK38A5F4bMJYqddEpqdrB3WR1Sqj/JrIYO/VcB0YKszY8GRFrggoVKTZKS3ZRyLAmvcOOKcNmg==}
+
+  '@webtui/theme-catppuccin@0.0.2':
+    resolution: {integrity: sha512-jooa69lW7X/72jnP+p3q2Z55go1SV3BHpgMhyGTkTL7sfpovDUwgkYi9vvC2HdkTgjPGjKWG4jVaBK4iACCb9w==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -1495,6 +1508,10 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.30.0
       eslint-visitor-keys: 4.2.0
+
+  '@webtui/css@0.0.2': {}
+
+  '@webtui/theme-catppuccin@0.0.2': {}
 
   acorn-jsx@5.3.2(acorn@8.14.1):
     dependencies:
