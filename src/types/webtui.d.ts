@@ -7,11 +7,15 @@ declare module "@webtui/css" {
 declare namespace svelte.JSX {
 	interface HTMLAttributes<T> {
 		"box-"?: string;
+		"is-"?: string;
+		"variant-"?: string;
 	}
 }
 
 declare namespace svelteHTML {
 	interface HTMLAttributes<T> {
 		"box-"?: string;
+		"is-"?: string;
+		"variant-"?: string;
 	}
 }
