@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+import Search from "../components/search/search.svelte";
+</script>
+
+<div class="page-container">
+    <Search />
+</div>
+
+<style>
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1lh;
+        height: 100%;
+        width: 100%;
+    }
+</style>
