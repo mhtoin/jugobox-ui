@@ -1,6 +1,6 @@
 <div class="sidebar-container">
     <div class="sidebar" box-="square contain:!top">
-        <div><span is-="badge" variant-="pink">Documentation</span></div>
+        <div><span is-="badge" variant-="pink">Navigation</span></div>
     </div>
 </div>
 
