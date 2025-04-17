@@ -15,15 +15,17 @@ import Sidebar from "../components/layout/sidebar.svelte";
 <style>
     .layout {
         display: grid;
-        gap: 10ch;
-        grid-template-columns: 1fr 3fr;
+        gap: 1ch;
+        grid-template-columns: 1fr 5fr;
         height: 100vh;
         justify-content: center;
         align-items: center;
     }
 
     .content {
-        padding: 2rem;
+        padding: 1ch;
+        height: 100%;
+        width: 100%;
     }
 </style>
 
