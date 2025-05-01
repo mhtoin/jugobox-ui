@@ -1,9 +1,10 @@
 <script>
 import Search from "../components/search/search.svelte";
+let { data } = $props();
 </script>
 
 <div class="page-container">
-    <Search />
+    <Search items={data?.items}/>
 </div>
 
 <style>
