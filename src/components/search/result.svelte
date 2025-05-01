@@ -11,7 +11,7 @@
 
 <div class="search-result" onclick={toggle} role="button" tabindex="0" onkeydown="{(e) => e.key === 'Enter' && toggle()}">
     <div class="result-container">
-    <h3>{@html title}</h3>
+    <h3 data-open={expanded}>{@html title}</h3>
     <div class="search-result-description" data-open={expanded}>
         <p>{description}</p>
     </div>
@@ -36,8 +36,16 @@
        
     }
 
-    .search-result::before {
+    .search-result h3::before {
         content: ">";
+        margin-right: 1ch;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .search-result h3[data-open="true"]::before {
+        rotate: 90deg;
+        transition: rotate 0.2s ease-in-out;
     }
 
     .search-result h3 {
@@ -60,13 +68,18 @@
 
     .search-result-description {
         max-height: 0;
+        display: flex;
         flex-direction: column;
         gap: 1lh;
         padding-left: 1ch;
         overflow: hidden;
+        transition: max-height 0.2s ease-in-out;
     }
-    .search-result-description[data-open] {
-        display: flex;
+    .search-result-description[data-open="true"] {
+        max-height: 10ch;
+        transition: max-height 0.5s ease-in-out;
+        overflow: hidden;
+        
     }
 
     .search-result-description p {
